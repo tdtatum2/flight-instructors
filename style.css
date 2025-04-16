@@ -1,13 +1,14 @@
+* {
+    transform: scale(0.8);
+    overflow: hidden;
+}
+
 body {
     background-color: #000 !important;
 }
 
-.card-gallery {
-    margin: 100px;
-}
-
 .card-container {
-    margin: 25px 25px 100px 25px;
+    margin: 25px;
     width: 350px;
     height: 500px;
     background-repeat: no-repeat;
