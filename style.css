@@ -1,3 +1,95 @@
-h1 {
-    color: blue;
+.card-gallery {
+    margin: 100px;
+}
+
+.card-container {
+    margin: 25px 25px 100px 25px;
+    width: 350px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffcd00;
+    transition: filter 0.75s ease, transform 0.75s ease, box-shadow 0.75s ease;
+}
+
+.card-noi {
+    background-image: url(./assets/noi.png);
+    background-position: 35%;
+}
+
+.card-fin {
+    background-image: url(./assets/fin.jpg);
+}
+
+.card-lock {
+    background-image: url(./assets/lock.jpg);
+}
+
+.card-matt {
+    background-image: url(./assets/matt.jpg);
+}
+
+.card-jen {
+    background-image: url(./assets/jen.jpg);
+}
+
+.card-nate {
+    background-image: url(./assets/nate.png);
+    background-position: 48%;
+}
+
+.card-cody {
+    background-image: url(./assets/cody.jpg);
+}
+
+.card-david {
+    background-image: url(./assets/david.jpg);
+}
+
+.card-noi, .card-lock, .card-jen, .card-cody {
+    transform: skewY(5deg) scale(1);
+    
+}
+
+.card-fin, .card-matt, .card-nate, .card-david {
+    transform: skewY(-5deg) scale(1);
+}
+
+.card-fin:hover, .card-matt:hover, .card-nate:hover, .card-david:hover {
+    filter: grayscale(0);
+    transform: skewY(-5deg) scale(1.1);
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 1);
+
+}
+
+.card-noi:hover, .card-lock:hover, .card-jen:hover, .card-cody:hover {
+    filter: grayscale(0);
+    transform: skewY(5deg) scale(1.1);
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 1);
+
+}
+
+.card-info {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute; 
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.card-container:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+    bottom: 0;
+}
+
+.instructor-name, .instructor-title, .instructor-info, .instructor-handedness, .instructor-from .instructor-bio {
+    margin: 0;
 }
