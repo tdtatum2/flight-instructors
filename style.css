@@ -1,5 +1,5 @@
 * {
-    transform: scale(0.8);
+    /* transform: scale(0.8); */
     overflow: hidden;
 }
 
@@ -9,8 +9,16 @@ body {
 
 .card-container {
     margin: 25px;
-    width: 350px;
-    height: 500px;
+    width: 22vw;
+    max-width: 350px;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(1);
@@ -79,14 +87,12 @@ body {
 .card-info {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute; 
-    bottom: -50px;
-    left: 0;
     width: 100%;
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.75s ease, transform 0.75s ease;
+    box-sizing: border-box;
 }
 
 .card-container:hover .card-info {
